@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DynamicTable</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <fieldset>
+        <legend>Properties</legend>
+        <label for="row">Row: (between 1 and 10):
+        <input type="number" id="row" name="row" min="1" max="10">
+       </label>
+        <label for="column">Column: (between 1 and 10):
+        <input type="number" id="column" name="column" min="1" max="10">
+      </label>
+      
+        <label for="borderBg">Border color:
+        <input type="color" id="borderBg" name="borderBg">
+      </label>
+        <label for="bodyBg">Body background-color:
+        <input type="color" id="bodyBg" name="bgColor">
+      </label>
+      <input type="button" value="DrawTable" id="btn">
+      </fieldset>
+    </form>
+    <div class="tableContainer">
+      <table id="table"></table>
+    </div>
+   
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

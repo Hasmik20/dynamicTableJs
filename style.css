@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: rgb(194, 189, 189);
+  --border-color: rgb(120, 120, 247);
+  --border-bg: rgb(237, 237, 245);
+  --label-color: rgb(66, 66, 117);
+}
+.container {
+  width: 70%;
+  margin: 5% auto;
+  background-color: var(--bg-color);
+}
+form {
+  padding: 3%;
+  font-size: 1.2rem;
+}
+fieldset {
+  height: 250px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  color: var(--label-color);
+}
+fieldset input {
+  padding: 10px;
+  width: 15%;
+  border: 2px solid var(--border-color);
+}
+fieldset input:focus {
+  border: none;
+  outline: none;
+  background-color: var(--border-bg);
+}
+#btn {
+  color: var(--label-color);
+  background-color: rgb(141, 147, 201);
+  width: 20%;
+}
+/* table style */
+.tableContainer {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+tr {
+  padding: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 4px solid var(--label-color);
+  text-align: center;
+}
+td {
+  padding: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
